@@ -9,6 +9,9 @@ tinygo build -wasm-abi=generic -target=wasi -o ./src/main.wasm ./go_code/main.go
 ```
 
 **to run**
+
+Using wasmer, download it from here [wasmer.io](https://wasmer.io/)
+
 ```sh
 wasmer ./src/main.wasm
 ```
