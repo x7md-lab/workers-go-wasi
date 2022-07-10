@@ -1,13 +1,3 @@
 name = "go-test"
-type = "javascript"
-workers_dev = true
 compatibility_date = "2022-07-09"
-[build.upload]
-format = "modules"
-dir = "./src"
-main = "./index.js"
-[wasm_modules]
-  MODULE = "./src/main.wasm"
-[[build.upload.rules]]
-type = "ESModule"
-globs = ["**/*.js"]
+main = "./src/main.wasm"

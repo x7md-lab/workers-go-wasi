@@ -16,10 +16,13 @@ Using wasmer, download it from here [wasmer.io](https://wasmer.io/)
 wasmer ./src/main.wasm
 ```
 
-**or**
+**or** 
+(updated wrangler config)
 (experimental support for WASI on Worker.dev)
 ```sh
 cd ./src/
-# first rm -f wrangler.toml or rename it to anything else...
 npx wrangler@wasm dev main.wasm
+#to deploy
+# wrangler.toml (should have) => main = "./src/main.wasm"
+npx wrangler@wasm publish
 ```
